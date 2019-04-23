@@ -1,0 +1,30 @@
+---
+title: "teeth"
+author: "jgblanc"
+date: "2019-04-23"
+output: workflowr::wflow_html
+---
+
+## Introduction
+
+```{r}
+teeth <- read.csv("../data/teeth.csv", row.names = 1)
+head(teeth)
+boxplot(len~dose, data = teeth)
+boxplot(len~supp, data = teeth)
+```
+
+```{r}
+boxplot(len ~ dose+supp, data = teeth)
+```
+
+
+```{r}
+rnorm(3)
+```
+
+
+
+
+
+
